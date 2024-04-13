@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Acorn';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Acorn'), local('Acorn'), url(path/assets/fonts/acorn-7.woff) format('woff');
+  }
+
+#landing-page-title {
+    font-family: 'Acorn', Arial;
+}
