@@ -5,6 +5,10 @@
   src: url("../fonts/Bonello/Bonello-Regular.woff2") format("woff2");
   }
 
+body {
+  margin: 0;
+}
+
 nav.navbar.navbar-expand-md {
   background-color: #fec601 !important;
 }
@@ -17,19 +21,72 @@ nav.navbar.navbar-expand-md {
   font-family: 'Bonello-Regular', Arial;
 }
 
-#landing-page-title {
-    color: #fff;
-    text-align: center;
-    font-size: 6.5rem;
-    padding-top: 250px;
-}
-
 #landing-div {
   background-color: #fec601;
-  height: 900px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+#landing-page-title {
+    color: #fff;
+    font-size: 6.5rem;
+    padding-bottom: 250px;
 }
 
 #profile-photo {
   height: 500px;
   width: 400px;
+}
+
+/* Footer */
+#social-links {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: #fe93bc;;
+}
+
+#social-links ul {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+#social-links ul li a {
+  padding: 10px;
+}
+
+#social-links ul::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: #fe93bc;;
+}
+
+i {
+  color: #fe93bc;
+}
+
+/* .social-links i:hover {
+  color: #ee9061;
+} */
+
+footer p {
+  text-align: center;
+  font-size: 75%;
+  color: inherit;
+  padding: 0;
+  margin: 0 auto;
 }
