@@ -21,6 +21,15 @@ body {
   font-family: 'Bonello-Regular', Arial;
 }
 
+img {
+
+}
+
+#about-div,
+#projects-div {
+  height: 100vh;
+}
+
 /* Home */
 #landing-div{
   flex-direction: column;
@@ -43,10 +52,6 @@ body {
   transform: rotate(-90deg);
 }
 
-#about-div {
-  height: 100vh;
-}
-
 .about-title {
   position: absolute;
   z-index: 2;
@@ -60,6 +65,16 @@ body {
 }
 
 /* Projects */
+#showcase-photo {
+  height: auto !important;
+  width: 100% !important;
+}
+
+#showcase-description {
+  background-color: #156064;
+  padding: 10px;
+  text-align: right;
+}
 
 /* Footer */
 #social-links {
@@ -119,12 +134,41 @@ footer p {
   }
 }
 
+@media screen and (max-width: 768px) and (min-width: 425px){
+  #showcase-div {
+    position: absolute;
+    float: right;
+    left: 350px;
+    top: 160px;
+  }
+
+  #showcase-title {
+    position: absolute;
+    left: 220px;
+    white-space: nowrap;
+  }
+
+  #showcase-description {
+    width: 375px;
+    height: 100px;
+    position: absolute;
+    top: 40px;
+  }
+}
+
 @media screen and (max-width: 1024px) and (min-width: 425px){
   #landing-page-title {
     font-size: 5rem;
   }
 }
 
+@media screen and (min-width: 1024px){
+  .card {
+    width: 18rem !important;
+  }
+}
+
 /* @media only screen and (max-width: 1024px) {
   
 } */
+
