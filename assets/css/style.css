@@ -7,10 +7,7 @@
 
 body {
   margin: 0;
-}
-
-nav.navbar.navbar-expand-md {
-  background-color: #fec601 !important;
+  color:#fff !important;
 }
 
 .nav-link {
@@ -21,8 +18,9 @@ nav.navbar.navbar-expand-md {
   font-family: 'Bonello-Regular', Arial;
 }
 
-#landing-div {
-  background-color: #fec601;
+/* Home */
+#landing-div,
+#about-div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -36,20 +34,23 @@ nav.navbar.navbar-expand-md {
     padding-bottom: 250px;
 }
 
+/* About */
 #profile-photo {
   height: 500px;
   width: 400px;
 }
+
+/* Projects */
 
 /* Footer */
 #social-links {
   width: 40px;
   position: fixed;
   bottom: 0px;
-  left: auto;
-  right: 40px;
+  left: 40px;
+  right: auto;
   z-index: 10;
-  color: #fe93bc;;
+  color: #fff;;
 }
 
 #social-links ul {
@@ -72,11 +73,11 @@ nav.navbar.navbar-expand-md {
   width: 1px;
   height: 90px;
   margin: 0px auto;
-  background-color: #fe93bc;;
+  background-color: #fff;;
 }
 
 i {
-  color: #fe93bc;
+  color: #fff;
 }
 
 /* .social-links i:hover {
@@ -90,3 +91,21 @@ footer p {
   padding: 0;
   margin: 0 auto;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 425px) {
+  #landing-page-title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 425px){
+  #landing-page-title {
+    font-size: 5rem;
+  }
+}
+
+/* @media only screen and (max-width: 1024px) {
+  
+} */
